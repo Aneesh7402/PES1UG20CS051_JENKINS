@@ -16,7 +16,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'deployed successfully'
+                echo 'deployment successful(PES1UG20CS051)'
             }
         }
     }
@@ -25,7 +25,7 @@ pipeline {
         always {
             script {
                 if (currentBuild.result == 'FAILURE') {
-                    echo 'pipeline failed'
+                    echo 'pipeline failed(PES1UG20CS051)'
                 }
             }
         }
